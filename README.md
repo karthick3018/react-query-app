@@ -14,7 +14,7 @@ This Project is to explore things in the react-query. This Project has a list of
 
 Each fetch in done using react-query , each fetch is also a custom hook
 
-###useListFetch.js -> the custom hook to fetch the list items
-###useEditHook.js -> the custom hook for edit
-###useDeleteHook.js -> the custom hook for delete
+### useListFetch.js -> the custom hook to fetch the list items
+### useEditHook.js -> the custom hook for edit
+### useDeleteHook.js -> the custom hook for delete
 
