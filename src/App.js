@@ -13,25 +13,29 @@ function App() {
   return (
     <>
       <h3>{`CURD Operations using React-Query ${status === 'loading' ? '...loading...' : ''}`}</h3>
-
-      <ol>
-        {data && data.map(eachData => {
-          return (
-            <li key={eachData.id} onClick={() => handleListClick(eachData)}>
-              <p>{eachData.title}</p>
-            </li>
-          )
-        })}
-      </ol>
-      <div>
-        {clickedValues &&
-          <UpdateDetails
-            values={clickedValues}
-          />
-        }
+      <div className="container">
+        <div>
+          <ol>
+            {data && data.map(eachData => {
+              return (
+                <li key={eachData.id} onClick={() => handleListClick(eachData)}>
+                  <p>{eachData.title}</p>
+                </li>
+              )
+            })}
+          </ol>
+        </div>
+        <div>
+          <p><b>Click on any list to edit!</b></p>
+          {clickedValues &&
+            <UpdateDetails
+              values={clickedValues}
+            />
+          }
+        </div>
       </div>
-    </>  
- 
+    </>
+
   );
 }
 

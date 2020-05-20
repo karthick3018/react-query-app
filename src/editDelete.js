@@ -35,10 +35,11 @@ const EditDeleteData = ({
      <input
       value = { (editValues && editValues.title) ||'' }
       onChange = { handleInputChange }
+      className="input-style"
      />
      <p>{status==='loading'?'...updating...':''}</p>
-     <button onClick={ handleEdit }>Edit</button>
-     <button onClick={ handleDelete }>Delete</button>
+     <button className="btn-class move"  onClick={ handleEdit }>Edit</button>
+     <button className="btn-class" onClick={ handleDelete }>Delete</button>
     </>
   )
 }
