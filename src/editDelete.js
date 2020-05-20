@@ -36,6 +36,7 @@ const EditDeleteData = ({
       value = { (editValues && editValues.title) ||'' }
       onChange = { handleInputChange }
      />
+     <p>{status==='loading'?'...updating...':''}</p>
      <button onClick={ handleEdit }>Edit</button>
      <button onClick={ handleDelete }>Delete</button>
     </>
